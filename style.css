@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:sans-serif;
+    font-size:14px;
+  }
+  
+  body{
+    width: 100%;
+    min-height: 100vh;
+    background-color:	#1C1C1C;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .insta-wrapper {
+    display: flex;
+    align-items:center;
+    justify-content:start;
+    width:60%;
+    height: 100vh;
+  }
+  
+  .insta-phone {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    width:60%;
+  }
+  
+  .insta-phone img{
+    height: 60rem;
+  }
+  .insta-continue{
+    display: flex;
+    justify-content:space-around; /* vertical */
+    align-items:center; /* horizontal */
+    flex-direction: column;
+    width:50%;
+    height:34rem;
+  }
+  .profile-photo{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius:100%;
+    
+  }
+  .profile-photo img {
+    width: 15rem;
+  }
+  
+  .insta-logo{
+    width: 60%;
+  }
+  
+  .group{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-direction: column;
+    background-color:	#363636;
+    width:100%;
+    padding: 1.3rem 0;
+    border: 1px solid 	#363636;
+  }
+  
+  .group:nth-child(1){
+    min-width: 19rem;
+  }
+  
+  .insta-login{
+    background-color:#0095f6;
+    color:white;
+    padding: 8px 6px;
+    border-radius: 6px;
+  }
+  
+  .insta-logout{
+    color:#0095f6;
+    margin-top: 1rem;
+  }
+  
+  .not-account{
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  
+  .link-blue{
+    color:#0095f6;
+  }
+  .get-app{
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    padding: 1rem 0;
+  }
+  
+  .download{
+    display: flex;
+    width:100%;
+    justify-content:space-evenly;
+    align-items:center;
+    padding:1rem;
+  }
+  
+  .app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+    margin-bottom:20px;
+  }
+  
+  .app-download:nth-child(1){
+    background-image: url('./Instagram/img/apple.png');
+    
+  }
+  
+  .app-download:nth-child(2){
+    background-image: url("./Instagram/img/playstore.png");
+  }
+  
+  
+  @media(max-width:1024px){
+    .insta-wrapper{
+      width:90%;
+      padding-right: 40px;
+    }
+  }
+  
+  @media(max-width:650px){
+    .insta-wrapper{
+      width:90%;
+    }
+    .insta-phone{
+      display:none;
+      
+    }
+    .insta-continue{
+      width:100%;
+    }
+    .insta-logo{
+      width: 30%;
+    }
+    .profile-photo img{
+      width: 50px;
+    }
+  }
